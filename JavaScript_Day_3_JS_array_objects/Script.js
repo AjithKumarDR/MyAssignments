@@ -80,8 +80,8 @@ console.log("IIFE function");
 } )(samplearray);
 
 //#endregion
-console.log("D)Return all the prime numbers in an array");
 
+console.log("D)Return all the prime numbers in an array");
 //#region Return all the prime numbers in an array
 console.log("Input Array :"+samplearray);
 ///Anonymous function
@@ -120,12 +120,108 @@ console.log(primearray.toString());
 
 
 //#endregion
+
+console.log("E)Return all the palindromes in an array");
+//#region Return all the prime numbers in an array
+const StringArray = ["radar","Car","level", "Mango", "madam", "Pet", "refer", "Bell", "Well"];
+console.log("Input Array :"+StringArray);  
+///Anonymous function   
+
+ function Test (arrayval){
+    return arrayval.filter( function( val ){
+        return  val ==val.split('').reverse().join('') ?  val : false;
+    });
+ }
+console.log("Anonymous function");
+console.log(Test(StringArray).toString());
+///IIFE function
+console.log("IIFE function");
+(function(arrayval){
+  console.log( arrayval.filter( function( val ){
+          return  val ==val.split('').reverse().join('') ?  val : false;
+      }).toString());
+  
+  } )(StringArray);
+
+
+
+//#endregion
+console.log("F)Return median of two sorted arrays of the same size");
+//#region Return all the prime numbers in an array
+let array1 = [1,2,4,5,3]
+let array2 = [6,7,8,9,10]
+console.log("Input Array 1 :"+array1 ); 
+console.log("Input Array 2 :"+array2 );  
+///Anonymous function 
+console.log("Anonymous function");
+function medianArray (arrayval1,arrayval2){
+  let merarray =arrayval1.concat(arrayval2).sort(function (a, b) { return a - b }); 
+  return merarray.length % 2 !== 0 ? merarray[Math.floor(merarray.length / 2)] : (merarray[Math.floor(merarray.length / 2) - 1] + merarray[Math.floor(merarray.length / 2)]) / 2 ;
+}
+console.log(medianArray(array1,array2));
+///IIFE function
+console.log("IIFE function");
+(function(arrayval1,arrayval2){
+  let merarray =arrayval1.concat(arrayval2).sort(function (a, b) { return a - b }); 
+  console.log( merarray.length % 2 !== 0 ? merarray[Math.floor(merarray.length / 2)] : (merarray[Math.floor(merarray.length / 2) - 1] + merarray[Math.floor(merarray.length / 2)]) / 2);
+  
+  } )(array1,array2);
+
+//#endregion
+console.log("G)Remove duplicates from an array");
+//#region Return all the prime numbers in an array
+let duplicatearray = [1,2,4,5,3,4,2,1,3]
+///Anonymous function   
+console.log("Input Array :"+duplicatearray);  
+console.log("Anonymous function");
+function removedupli(arrayval){
+  return arrayval.filter(function(item, pos) {
+    return arrayval.indexOf(item) == pos;
+})
+}
+console.log(removedupli(duplicatearray).toString());
+///IIFE function
+console.log("IIFE function");
+(function(arrayval){
+ console.log(  arrayval.filter(function(item, pos) {
+  return arrayval.indexOf(item) == pos;
+}).toString());
+} )(duplicatearray);
+
+
+//#endregion
+console.log("H)Rotate an array by k times");
+//#region Return all the prime numbers in an array
+let originalArray = [1, 2, 3, 4, 5,6];
+let notimes=3;
+console.log("Input Array :"+originalArray+" and No of Times:"+notimes); 
+///Anonymous function   
+console.log("Anonymous function");
+
+function rotateArray(arr, k) {
+  const n = arr.length;
+  k = k % n;
+  return [...arr.slice(n - k), ...arr.slice(0, n - k)];
+}
+console.log(rotateArray(originalArray,notimes).toString());
+///IIFE function
+console.log("IIFE function");
+(function(arr, k){
+  const n = arr.length;
+  k = k % n;
+  console.log(  [...arr.slice(n - k), ...arr.slice(0, n - k)].toString());
+ } )(originalArray,notimes);
+
+
+//#endregion
+
 console.log("---------------------------------------------------------");
 console.log("2.Do the below programs in arrow functions:");
 console.log("---------------------------------------------------------");
 console.log("A)Print odd numbers in an array");
-/////Arrow Function 
+
 //#region Print odd numbers in an array
+/////Arrow Function 
 console.log("Arrow Function ");
 console.log("Input Array :"+samplearray);//Samplearray getting from anonymous function
 var arrOdd= (arrval)=>{
@@ -164,4 +260,11 @@ if (num % i === 0 || num % (i + 2) === 0) return false;
 return true;
 });
 console.log(arrowPrimesInArray(samplearray).toString());
+//#endregion
+console.log("E)Return all the palindromes in an array");
+//#region Return all the palindromes in an array
+/////Arrow Function 
+console.log("Arrow Function ");
+console.log("Input Array :"+StringArray);//Samplearray getting from anonymous function
+console.log( StringArray.filter( ( val ) => val ==val.split('').reverse().join('') ?  val : false).toString());
 //#endregion
