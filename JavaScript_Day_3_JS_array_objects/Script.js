@@ -33,7 +33,7 @@ console.log("Input Array :"+Stringarray);
 console.log("Anonymous function");
 ///Anonymous function
 
-function anonymousTitleCaps(arrval) {
+let anonymousTitleCaps=function(arrval) {
     return arrval.map(function (str) {
       return str.split(' ').map(function (word) {
           return word.charAt(0).toUpperCase() + word.slice(1);
@@ -59,7 +59,7 @@ console.log("C)Sum of all numbers in an array");
 ///Anonymous function
 console.log("Anonymous function");
 console.log("Input Array :"+samplearray);
-function anonymousSUMArray(arrval){
+let anonymousSUMArray =function (arrval){
     let sum = 0;
 for (let i = 0; i < arrval.length; i++ ) {
     sum += arrval[i];
@@ -86,7 +86,7 @@ console.log("D)Return all the prime numbers in an array");
 console.log("Input Array :"+samplearray);
 ///Anonymous function
 console.log("Anonymous function");
-function findPrimesInArray(arr) {
+let findPrimesInArray =function (arr) {
   let primearray=[];
   arr.forEach((num) => {
  if (num <= 1) return false;
@@ -127,7 +127,7 @@ const StringArray = ["radar","Car","level", "Mango", "madam", "Pet", "refer", "B
 console.log("Input Array :"+StringArray);  
 ///Anonymous function   
 
- function Test (arrayval){
+  let Test=function  (arrayval){
     return arrayval.filter( function( val ){
         return  val ==val.split('').reverse().join('') ?  val : false;
     });
@@ -154,7 +154,7 @@ console.log("Input Array 1 :"+array1 );
 console.log("Input Array 2 :"+array2 );  
 ///Anonymous function 
 console.log("Anonymous function");
-function medianArray (arrayval1,arrayval2){
+let medianArray =function  (arrayval1,arrayval2){
   let merarray =arrayval1.concat(arrayval2).sort(function (a, b) { return a - b }); 
   return merarray.length % 2 !== 0 ? merarray[Math.floor(merarray.length / 2)] : (merarray[Math.floor(merarray.length / 2) - 1] + merarray[Math.floor(merarray.length / 2)]) / 2 ;
 }
@@ -174,7 +174,7 @@ let duplicatearray = [1,2,4,5,3,4,2,1,3]
 ///Anonymous function   
 console.log("Input Array :"+duplicatearray);  
 console.log("Anonymous function");
-function removedupli(arrayval){
+let removedupli=function (arrayval){
   return arrayval.filter(function(item, pos) {
     return arrayval.indexOf(item) == pos;
 })
@@ -198,7 +198,7 @@ console.log("Input Array :"+originalArray+" and No of Times:"+notimes);
 ///Anonymous function   
 console.log("Anonymous function");
 
-function rotateArray(arr, k) {
+let rotateArray=function (arr, k) {
   const n = arr.length;
   k = k % n;
   return [...arr.slice(n - k), ...arr.slice(0, n - k)];
