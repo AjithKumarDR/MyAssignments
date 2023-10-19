@@ -1,0 +1,21 @@
+.divh{
+    height: 130px;
+}
+
+.pds{
+    padding: 4% 5%;
+    
+}
+.st{
+    padding: 4%;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a2a89e;
+    opacity: 1; /* Firefox */
+}
+
+h1{
+    font-size:240% ;
+    letter-spacing: 2px;
+}
