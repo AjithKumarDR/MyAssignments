@@ -1,0 +1,38 @@
+img{
+    max-width: 25% !important;
+    margin: 4%;
+    background-color: #cfd99482 !important;
+}
+table{
+ overflow: auto;
+}
+.card {
+    height: 100%;
+}
+
+#outCrd div:first-child  {
+margin: 3%;
+}
+.bootstrap-select button{
+    border: 1px solid #ced4da;
+}
+#State{
+    margin-right: 5%;
+}
+.custom-radio{
+    margin: 1% 5% 0px 5%;
+   
+}
+body{
+    background-image: url('../pictures/bodyback.png');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.mainstart{
+    margin: 2% 0 2% 0;
+}
+.card-body .card-body{
+    background-color: #a6a75526;
+    margin: 1%;
+}

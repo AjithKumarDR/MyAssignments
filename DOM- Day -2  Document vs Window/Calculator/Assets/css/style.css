@@ -1,0 +1,12 @@
+#calc{
+    background-color: #00cbff40;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #cac0ff;
+}
+input{
+    margin: 1%;
+}
