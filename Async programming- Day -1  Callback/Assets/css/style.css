@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   padding: 15%    ;
+}
+
+
+
+#textcon{
+  
+    font-size: 30px;
+    font-weight: bold;
+ 
+    width: auto;
+    padding: 5%;
+   /* border:5px solid #003e80b0;*/
+    background-color: #9999996e;
+    }
+
+#textb{
+    border-bottom:5px solid #003e80b0;
+    width: 80%;
+    padding: 5%;
+    position: absolute;
+    display: none;
+}
