@@ -1,0 +1,72 @@
+html,body {
+    height: 100%;
+    margin: 0;
+   
+}
+
+
+.card,.container{
+    margin: 6px;
+}
+.calenderico,.locationico,.Populationico,.LastUpdateico,.title{
+    font-size: 3VW;
+}
+
+.select_State,.select_Citys,.State,.citys{
+    font-size: 1.5VW;
+}
+.datedetail,.locationDet,.PopulationDet,.LastUpdate{
+    font-size: 1VW;
+}
+
+.datedetail,.locationDet,.PopulationDet,.LastUpdate{
+    font-weight: bold;
+}
+
+.calenderico,.locationico,.Populationico,.LastUpdateico{
+    text-align: right;
+}
+.datedetail,.locationDet,.PopulationDet,.LastUpdate,.select_State,.select_Citys,.title,.Covidetails{
+    padding: 2%;
+    color: white;
+}
+
+body{
+    background-image: url('../pictures/Mainbackg.jpg  ');    
+    backdrop-filter: blur(6px); 
+  /* overflow: hidden; */
+  
+}
+.maincard{
+    background-image: url('../pictures/back.jpg');
+   
+}
+.maincard,body,.Clouds,.Mist,.Clear,.haze,.Fog,.Rain{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100% 100% 100%;
+}
+
+.frosted-glass {
+    
+    
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    /* backdrop-filter: blur(6px); */
+  }
+
+  
+
+    .outputcard,.mainsub,.outsub{
+        min-height: 80% !important;
+    }
+    .progress{
+        height: 20px;
+        font-size: 120%;
+    }

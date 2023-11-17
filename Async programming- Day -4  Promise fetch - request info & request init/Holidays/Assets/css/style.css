@@ -1,0 +1,74 @@
+html,body {
+    height: 100%;
+    margin: 0;
+   
+}
+
+
+
+
+
+
+
+.select_Contrie,.select_year{
+    padding: 2%;
+    color: white;
+}
+
+body{
+    background-image: url('../pictures/Mainbackg.jpg');    
+    backdrop-filter: blur(6px); 
+  /* overflow: hidden; */
+  
+}
+.maincard{
+    background-image: url('../pictures/backgro.jpg');
+   
+}
+.maincard,body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100% 100% 100%;
+}
+
+.frosted-glass {
+    
+    
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    /* backdrop-filter: blur(6px); */
+  }
+
+
+    .card-link{
+        color: #464545 !important;
+    }
+    .card-body{
+        color: #034a5ae3;
+    }
+    .card{
+        margin: 1%  ;
+    }
+
+    @keyframes filling {
+        from{
+          background-position: center 25%;
+        }
+        to {
+          background-position: center 50%;
+        }
+      }
+      
+      .container-text {
+        background-image:  url(/Assets/pictures/title.jpeg);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color:  #FFFFFF;        
+        font-size: 70px;        
+        animation: filling 3s ease forwards;
+      }

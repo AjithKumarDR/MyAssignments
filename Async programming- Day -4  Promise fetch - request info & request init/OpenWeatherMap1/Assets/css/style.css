@@ -1,0 +1,84 @@
+html,body {
+    height: 100%;
+    margin: 0;
+   
+}
+.degerees{
+    padding: 3%;
+}
+ .degreeValue{
+    font-size: 2.5vw;
+
+}
+
+.degreeValue,.weatherDesc,.calenderico,.locationico,.Humldityico,.windico,.Pressureico,.title{
+    font-size: 2VW;
+}
+.Dree{
+    font-size: 7vw;
+   
+}
+.weatherIco{
+    font-size: 7vw;
+}
+.datedetail,.locationDet,.HumldityDet,.windDet,.PressureDet,.weatherloc,.weatherDesc.degreeValue,.Dree{
+    font-weight: bold;
+}
+
+.calenderico,.locationico,.Humldityico,.windico,.Pressureico{
+    text-align: right;
+}
+.datedetail,.locationDet,.HumldityDet,.windDet,.PressureDet,.select_Contrie,.select_Citys{
+    padding: 2%;
+    color: white;
+}
+
+body{
+    background-image: url('../pictures/Mainbackg.jpg');    
+    backdrop-filter: blur(6px); 
+  /* overflow: hidden; */
+  
+}
+.maincard{
+    background-image: url('../pictures/backgro.jpg');
+   
+}
+.maincard,body,.Clouds,.Mist,.Clear,.haze,.Fog,.Rain{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% 100% 100%;
+}
+
+.frosted-glass {
+    
+    
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    /* backdrop-filter: blur(6px); */
+  }
+
+  .Clouds{
+    background-image: url('../pictures/Clouds.jpg');
+  }
+    .Mist{
+        background-image: url('../pictures/Mist.jpg');
+    }
+    .Clear  {
+        background-image: url('../pictures/Clear.jpg');
+    }
+    .haze{
+        background-image: url('../pictures/haze.jpg');
+    }
+    .Fog{
+        background-image: url('../pictures/Fog.jpg');
+    }
+    .Rain{ 
+        background-image: url('../pictures/Rain.jpg');
+    }
+    .card{
+        margin: 2%;
+    }
