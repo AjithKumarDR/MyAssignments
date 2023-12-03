@@ -12,13 +12,13 @@ function App() {
   {
     type:"PLUS",
     price:"9",
-    available:["Single User","50GB Storage","Unlimited Public Projects","Community Access","Unlimited Private Projects","Dedicated Phone Support","Free Subdomain"],
+    available:["5 User","50GB Storage","Unlimited Public Projects","Community Access","Unlimited Private Projects","Dedicated Phone Support","Free Subdomain"],
     Notavailable:["Monthly Status Reports"]
   },
   {
     type:"PRO",
     price:"49",
-    available:["Single User","50GB Storage","Unlimited Public Projects","Community Access","Unlimited Private Projects","Dedicated Phone Support","Free Subdomain","Monthly Status Reports"],
+    available:["Unlimited User","50GB Storage","Unlimited Public Projects","Community Access","Unlimited Private Projects","Dedicated Phone Support","Free Subdomain","Monthly Status Reports"],
     Notavailable:[]
   }
  ]
