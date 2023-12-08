@@ -173,7 +173,7 @@ function App() {
             {Column_Class:"col-xl-6",
             Column_style:"",
             Balance_datas:
-            <><h2 class="mb-4">Ready to get started? Sign up now!</h2>
+            <><h2 className="mb-4">Ready to get started? Sign up now!</h2>
             <form className="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
             {<Mails />}
             </form></>
