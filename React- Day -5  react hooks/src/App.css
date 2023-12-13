@@ -4,39 +4,47 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.todo{
+  padding-top: 4%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.userinput,.navba{
+  padding: 2%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todolist{
+  text-align: left;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todostatus{
+  display: -webkit-inline-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todobody{
+  padding: 7% !important;
+  background-color: #ccf5d3;
 }
-
-.card {
-  padding: 2em;
+.todobut{
+  position: absolute;
+  right:    5%;
+  bottom:   8%;
 }
-
-.read-the-docs {
-  color: #888;
+.todobutpo{
+margin: 2%;
+}
+button{
+  width: 100px;
+}
+#todoname,#tododesc{
+  border-color: #14ad89;
+}
+h1{
+  color: #14ad89 !important;
+}
+.taskdelete{
+  background-color: #d05e20 !important;
+  border-color: #d05e20 !important;
+}
+select{
+  background-color: #ff7f85 !important;
+  color: white !important;
+}
+.selectcmp {
+  background: #198754 !important ;
 }
