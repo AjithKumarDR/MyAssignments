@@ -10,6 +10,7 @@ function Userslist({editID,seteditID}) {
     let [datatb,setdatatb] = useState([])
     const getdatatb = async()=>{
         try {
+            seteditID('')
           let res = await axios.get(API_URL)
           setdatatb(res.data)
         } catch (error) {

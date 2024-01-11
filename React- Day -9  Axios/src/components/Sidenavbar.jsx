@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import {  useNavigate } from 'react-router-dom'
 function Sidenavbar() {
     let navigate = useNavigate();
+
+  
+
   return <>
   <nav className="sidenav shadow-right sidenav-light">
                     <div className="sidenav-menu">
@@ -44,7 +47,7 @@ function Sidenavbar() {
                         
                             <div className="sidenav-menu-heading">User Management</div>
                            
-                            <a className="nav-link collapsed"   onClick={()=>  navigate('/AddUsers')} 
+                            <a className="nav-link collapsed"   onClick={()=> navigate('/AddUsers')  } 
                            
                             data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div className="nav-link-icon">

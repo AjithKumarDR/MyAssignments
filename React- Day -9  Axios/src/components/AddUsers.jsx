@@ -76,15 +76,43 @@ function AddUsers({editID,seteditID}) {
 
          if(res.status===200)
          {
+            editID=''
+            seteditid('')
+            setfirstname('')
+            setlastname('')
+            setaddress('')
+            setmail('')
+            setstate('')
+            setcity('')
+            setmobile('')
+            setcompany('')
+            setBusiness('')
+            setavatar('')
             
-            alert('Update Successfully')
-            navigate('/Userslist')
+            alert('Update Successfully')        
+
+           
+
+
+
+
+             navigate('/Userslist')
           }
          if(res.status===201)
          {
-            
+            seteditid('')
+            setfirstname('')
+            setlastname('')
+            setaddress('')
+            setmail('')
+            setstate('')
+            setcity('')
+            setmobile('')
+            setcompany('')
+            setBusiness('')
+            setavatar('')
            alert('ADD ADD Successfully')
-           navigate('/Userslist')
+            navigate('/Userslist')
          }
          
         } catch (error) {
