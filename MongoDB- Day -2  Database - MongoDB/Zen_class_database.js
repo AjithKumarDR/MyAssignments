@@ -1,0 +1,181 @@
+   db.topics.insertMany([{
+    batch:"B51WET",
+    topics:"JavaScript_Day_1",
+    month:"october"
+},{
+    batch:"B51WET",
+    topics:"JavaScript_Day_2",
+    month:"october"
+},{
+    batch:"B51WET",
+    topics:"JavaScript_Day_3",
+    month:"october"
+},{
+    batch:"B51WET",
+    topics:"JavaScript_Day_4",
+    month:"november"
+},{
+    batch:"B51WET",
+    topics:"JavaScript_Day_5",
+    month:"november"
+}])
+
+  db.tasks.insertMany([{
+    topic_name:"JavaScript_Day_1",
+    activities:["Write a blog on Difference between HTTP1.1 vs HTTP2","Write a blog about objects and its internal representation in Javascript","Read about IP address, port, HTTP methods, MAC address"],
+    submited:["ajithkumar","ashok"]
+},
+{
+    topic_name:"JavaScript_Day_2",
+    activities:["https://docs.google.com/document/d/1lkzy8u0rkW5v2jGvbJcJrmVVLjMqN_TmmsHkL41AoIc/preview"],
+    submited:["ajithkumar","mani"]
+},
+{
+    topic_name:"JavaScript_Day_3",
+    activities:["https://docs.google.com/document/d/1lkzy8u0rkW5v2jGvbJcJrmVVLjMqN_TmmsHkL41AoIc/preview"],
+    submited:["ajithkumar","anand"]
+},
+{
+    topic_name:"JavaScript_Day_4",
+    activities:["https://docs.google.com/document/d/1lkzy8u0rkW5v2jGvbJcJrmVVLjMqN_TmmsHkL41AoIc/preview"],
+    submited:["ajithkumar","amar","ashok"]
+},
+{
+    topic_name:"JavaScript_Day_5",
+    activities:["https://docs.google.com/document/d/1lkzy8u0rkW5v2jGvbJcJrmVVLjMqN_TmmsHkL41AoIc/preview"],
+    submited:["ajithkumar","mani","amar"]
+}])
+  db.company_drives.insertMany([{
+    "company_name":"Wipro",
+    "date":ISODate("2020-10-20"),
+    "students_appeared":["ajithkumar","anand","ashok","mani"]
+},
+{
+    "company_name":"TCS",
+    "date":ISODate("2020-10-20"),
+    "students_appeared":["mani","amar","ajithkumar"]
+}
+,
+{
+    "company_name":"HCL",
+    "date":ISODate("2024-02-02"),
+    "students_appeared":["ashok","anand","ajithkumar"]
+}])
+  db.codekata.insertMany([
+    { codekata:[
+        {
+        username:"ajith",
+    question:10,
+    solved:10
+      },
+    {
+        username:"ashok",
+    question:10,
+    solved:8
+   },
+   {
+       username:"anand",
+   question:10,
+   solved:9
+  },
+  {
+      username:"amar",
+  question:10,
+  solved:7
+ },
+ {
+     username:"mani",
+ question:10,
+ solved:4
+}
+   ]},
+   {webKata:[
+    {
+    username:"ajith",
+question:10,
+solved:10
+  },
+{
+    username:"ashok",
+question:10,
+solved:5
+},
+{
+   username:"anand",
+question:10,
+solved:6
+},
+{
+  username:"amar",
+question:10,
+solved:9
+},
+{
+ username:"mani",
+question:10,
+solved:2
+}]}
+])
+
+ db.mentors.insertMany([{
+    "mentor_name":"nagaraj",
+    "mentees_count":35
+},
+,
+{
+    "mentor_name":"vidhya",
+    "mentees_count":9
+},
+])
+
+ db.users.insertMany([{
+    name:"ajith",
+    batch:"B51WET",
+    
+},{
+    name:"ashok",
+    batch:"B51WET",
+    
+}
+,{
+    name:"amar",
+    batch:"B51WET",
+    
+},{
+    name:"mani",
+    batch:"B51WET",
+    
+}
+,{
+    name:"anand",
+    batch:"B51WET",
+    
+}
+
+
+])
+
+ db.attendance.insertMany([{
+    topics:"JavaScript_Day_1",
+    present:["ajith","ashok","mani"]
+},
+{
+    topics:"JavaScript_Day_2",
+    present:["ajith","anand","ashok"]
+}
+,
+{
+    topics:"JavaScript_Day_3",
+    present:["ajith","anand","amar"]
+}
+,
+{
+    topics:"JavaScript_Day_4",
+    present:["ajith","anand"]
+}
+,
+{
+    topics:"JavaScript_Day_5",
+    present:["ajith","amar"]
+}
+])

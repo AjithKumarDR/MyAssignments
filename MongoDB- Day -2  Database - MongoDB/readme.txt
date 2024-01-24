@@ -1,0 +1,1 @@
+database datas has given by a zen class database file and given assignment task querys given the mongodb database word file pls check and give me a feedback
