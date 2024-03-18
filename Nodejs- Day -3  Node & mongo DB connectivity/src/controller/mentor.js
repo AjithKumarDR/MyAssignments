@@ -95,10 +95,35 @@ const AssignMultiStudents = async(req,res)=>{
 }
 //#endregion
 
+//#region Get Mentor Students Details  By Mentor ID 
+const getAll = async(req,res)=>{
+    
+    try {
+        let mentor = await mentorModel.find()
+        
+       
+        res.status(200).send({
+            message:"Data fetch successfull",
+            "Mentor Database:":mentor,
+            
+
+        })
+    } catch (error) {
+        res.status(500).send({
+            message:error.message || "Internal server error"
+        })
+    }
+    
+}
+//#endregion
+
+
+
 export default {
 
     createMentor,
     getMentorStudentsById,
     AssignMultiStudents,
+    getAll
 
 }

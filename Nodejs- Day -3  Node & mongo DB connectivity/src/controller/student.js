@@ -124,11 +124,34 @@ const getPrevMentor = async(req,res)=>{
     
 }
 //#endregion
+//#region Get ALL Mentor 
+const getAll = async(req,res)=>{
+    
+    try {
+        let student = await studentModel.find()
+        
+       
+        res.status(200).send({
+            message:"Data fetch successfull",
+            "Student Database:":student,
+            
+
+        })
+    } catch (error) {
+        res.status(500).send({
+            message:error.message || "Internal server error"
+        })
+    }
+    
+}
+//#endregion
+
 
 export default {
     
     createStudent,
     assignMentor,
-    getPrevMentor
+    getPrevMentor,
+    getAll
    
 }
