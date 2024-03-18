@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "a81c5f9d-7c4a-4b46-b3bb-c987f72510d2",
+		"name": "StudentMentor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28692183",
+		"_collection_link": "https://www.postman.com/material-technologist-39902777/workspace/my-workspace/collection/28692183-a81c5f9d-7c4a-4b46-b3bb-c987f72510d2?action=share&source=collection_link&creator=28692183"
+	},
+	"item": [
+		{
+			"name": "Create Mentor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Viswa\",\r\n    \"email\":\"Viswa@gmail.com\"        \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host}}/mentor",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"mentor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ashok\",\r\n    \"email\":\"Ashok@gmail.com\"        \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host}}/student",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select One Student and Assign one Mentor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mentorid\":\"65f6f2eee5946fa3d90155e4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host}}/student/:id",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"student",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "65f6ef477836e731f8de8c81"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all students for a particular mentor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Host}}/mentor/:id",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"mentor",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "65f6ef417836e731f8de8c7e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Previous Mentor For The Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Host}}/student/:id",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"student",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "65f6ef477836e731f8de8c81"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Multi Student for the mentor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"students\":[\"65f73671251415953ddf1ffe\",\"65f73687251415953ddf2001\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Host}}/mentor/:id",
+					"host": [
+						"{{Host}}"
+					],
+					"path": [
+						"mentor",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "65f73657251415953ddf1ffb"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Host",
+			"value": "https://mentorandstudentassignment.onrender.com",
+			"type": "string"
+		}
+	]
+}
