@@ -1,0 +1,8 @@
+https://github.com/AjithKumarDR/GMAIL_FRONTEND.git
+https://github.com/AjithKumarDR/Gmail_Backend.git
+
+git remote add origin https://github.com/AjithKumarDR/GMAIL_FRONTEND.git
+
+
+Backend Deploy :https://gmail-backend-wxdr.onrender.com
+FrontEnd Deploy: https://inquisitive-babka-355abd.netlify.app/login
