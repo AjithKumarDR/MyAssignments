@@ -33,7 +33,7 @@ This project is a clone of the popular email service Gmail. It aims to replicate
  
 
  <h2>Sample User </h2>
- <li><strong>User Name :</strong> ajithkumardr1995@gmail.com </li>
+ <li><strong>Mail ID :</strong> ajithkumardr1995@gmail.com </li>
  <li><strong>Password  :</strong> 54321 </li>
  <li><strong>User Name :</strong> AjithKumar DR </li>
  <li><strong>D.O.B     :</strong> 04/29/2024 </li>
