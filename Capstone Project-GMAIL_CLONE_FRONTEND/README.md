@@ -40,12 +40,13 @@ This project is a clone of the popular email service Gmail. It aims to replicate
 
 
  <h2>Contributing  </h2>
-<h6>Contributions are welcome! If you find any bugs or have suggestions for new features, please Give a feedback.</h6>
+<h6>Contributions are welcome! If you find any bugs or have suggestions for new features, please Give us feedback.</h6>
 <h6><strong> Season Maintain only 10 min after then auto Logout  </strong></h6>
-<h6><strong> API Response Getting Delay Sometimes Please wait for to get Resposnse   </strong></h6>
+<h6><strong> API Response Getting Delay Sometimes Please wait to get Response   </strong> approximately takes 140 sec 1st time because the Render free account  instance will spin down with inactivity, which can delay requests by 50 seconds or more.</h6>
 
 
 
 
 
  
+![Login_Delay](https://github.com/AjithKumarDR/MyAssignments/assets/143244675/59eb089f-efb0-41b7-8daa-d7f8de98abde)
