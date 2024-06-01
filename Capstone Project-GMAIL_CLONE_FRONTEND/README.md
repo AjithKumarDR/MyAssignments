@@ -42,6 +42,7 @@ This project is a clone of the popular email service Gmail. It aims to replicate
  <h2>Contributing  </h2>
 <h6>Contributions are welcome! If you find any bugs or have suggestions for new features, please Give us feedback.</h6>
 <h6><strong> Season Maintain only 10 min after then auto Logout  </strong></h6>
+<h6><strong> Sendgrid Send Mails Showing in Spam Mail Category so please check in that category </strong></h6>
 <h6><strong> API Response Getting Delay Sometimes Please wait to get Response   </strong> approximately takes 140 sec 1st time because the Render free account  instance will spin down with inactivity, which can delay requests by 50 seconds or more.</h6>
 
 
